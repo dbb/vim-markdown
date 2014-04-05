@@ -132,6 +132,13 @@ hi def link markdownCodeDelimiter         Delimiter
 hi def link markdownEscape                Special
 hi def link markdownError                 Error
 
+" dbb's edits
+
+" inline code
+hi def link markdownCode Identifier 
+" code block
+hi def link markdownCodeBlock String
+
 let b:current_syntax = "markdown"
 if main_syntax ==# 'markdown'
   unlet main_syntax
